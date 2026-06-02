@@ -6,4 +6,9 @@ export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'sobre-nosotros', component: SobreNosotros }
+  // AGREGAR LAS DEMAS RUTAS :D)
+  {
+    path: 'contacto',
+    loadComponent: () => import('./pages/contacto/contacto').then(m => m.ContactoComponent)
+  }
 ];

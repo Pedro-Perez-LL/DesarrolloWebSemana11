@@ -1,0 +1,33 @@
+<div class="form-card">
+  <h2>Envíanos un mensaje</h2>
+  
+  <form [formGroup]="contactoForm" (ngSubmit)="enviarFormulario()">
+    
+    <div class="form-group">
+      <label>Nombre Completo:</label>
+      <input type="text" formControlName="nombre" placeholder="Tu nombre">
+      <!-- Alertas dinámicas -->
+      <small *ngIf="contactoForm.get('nombre')?.touched && contactoForm.get('nombre')?.invalid" class="error">
+        El nombre debe tener al menos 3 caracteres.
+      </small>
+    </div>
+
+    <div class="form-group">
+      <label>Correo Electrónico:</label>
+      <input type="email" formControlName="correo" placeholder="ejemplo@correo.com">
+      <small *ngIf="contactoForm.get('correo')?.touched && contactoForm.get('correo')?.invalid" class="error">
+        Ingresa un correo electrónico válido.
+      </small>
+    </div>
+
+    <div class="form-group">
+      <label>Mensaje:</label>
+      <textarea formControlName="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+      <small *ngIf="contactoForm.get('mensaje')?.touched && contactoForm.get('mensaje')?.invalid" class="error">
+        El mensaje debe tener al menos 10 caracteres.
+      </small>
+    </div>
+
+    <button type="submit" [disabled]="contactoForm.invalid">Enviar Mensaje</button>
+  </form>
+</div>

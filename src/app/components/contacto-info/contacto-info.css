@@ -1,0 +1,19 @@
+.contacto-info {
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contacto-info h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin: 10px 0;
+}

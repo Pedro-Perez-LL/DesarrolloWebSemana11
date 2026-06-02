@@ -1,0 +1,44 @@
+.info-card {
+  background: #1e293b; 
+  color: #f8fafc;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.info-card h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #38bdf8;
+  padding-bottom: 10px;
+}
+
+.info-card p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.info-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-lista li {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.info-lista strong {
+  color: #38bdf8;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

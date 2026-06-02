@@ -1,0 +1,17 @@
+.valores {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff8e1;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+.valores ul {
+  list-style: none;
+  padding: 0;
+}
+
+.valores li {
+  font-size: 16px;
+  margin: 8px 0;
+}
